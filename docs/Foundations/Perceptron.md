@@ -321,20 +321,6 @@ x₃ ──→ w₃ ──┤
           Output
 ```
 
-Mathematically:
-
-\[
-z=\sum_iw_ix_i+b
-\]
-
-then:
-
-\[
-y=f(z)
-\]
-
----
-
 ## 13. A Numerical Example
 
 Suppose:
