@@ -280,16 +280,6 @@ This value is passed to the activation function.
 
 The original Perceptron commonly uses a step activation function.
 
-For example:
-
-\[
-f(z)=
-\begin{cases}
-1 & z\geq 0\\
-0 & z<0
-\end{cases}
-\]
-
 Therefore:
 
 - z ≥ 0 → Output 1
