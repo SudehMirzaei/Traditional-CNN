@@ -943,17 +943,8 @@ The 3 × 3 convolution performs the main spatial feature extraction, while the 1
 
 ---
 
-## 26. Convolution vs Fully Connected Layers
 
-A fully connected layer connects every input value to every output neuron.
-
-```
-
-Convolution instead uses local connectivity and shared weights:
-
----
-
-## 27. Parameter Efficiency
+## 26. Parameter Efficiency
 
 Consider an RGB input:
 
@@ -988,7 +979,7 @@ This parameter efficiency is one of the reasons CNNs work well with image data.
 
 ---
 
-## 28. Important Distinction: Kernel vs Output Feature Map
+## 27. Important Distinction: Kernel vs Output Feature Map
 
 These concepts should not be confused.
 
@@ -1030,7 +1021,7 @@ The feature map is the spatial response of that detector.
 
 ---
 
-## 29. One Filter vs Multiple Filters
+## 28. One Filter vs Multiple Filters
 
 For one filter:
 
@@ -1066,7 +1057,7 @@ Therefore:
 
 ---
 
-## 30. Complete Example
+## 29. Complete Example
 
 Suppose we have:
 
@@ -1135,7 +1126,7 @@ This means:
 
 ---
 
-## 31. Convolution as a Transformation
+## 30. Convolution as a Transformation
 
 A useful way to think about convolution is:
 
@@ -1169,7 +1160,7 @@ High-Level Representations
 
 ---
 
-## 32. Important Parameters of a Convolution
+## 31. Important Parameters of a Convolution
 
 A convolutional layer is mainly characterized by:
 
@@ -1197,7 +1188,7 @@ A convolutional layer is mainly characterized by:
 
 ---
 
-## 37. Summary
+## 32. Summary
 
 Convolution is the fundamental operation that allows CNNs to extract local features from images.
 
