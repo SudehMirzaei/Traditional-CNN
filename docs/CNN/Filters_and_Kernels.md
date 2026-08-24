@@ -595,7 +595,7 @@ assuming appropriate padding and stride.
 The important relationship is:
 
 \[
-\boxed{C_{out}=\text{Number of Filters}}
+{C_{out}= {Number of Filters}
 \]
 
 ---
