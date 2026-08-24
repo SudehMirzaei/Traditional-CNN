@@ -224,7 +224,7 @@ The Perceptron also contains a bias.
 The mathematical equation is:
 
 \[
-z = w_1x_1+w_2x_2+\dots+w_nx_n+b
+z = w_1x_1+w_2x_2+ ... +w_nx_n+b
 \]
 
 The bias allows the model to shift its decision boundary.
