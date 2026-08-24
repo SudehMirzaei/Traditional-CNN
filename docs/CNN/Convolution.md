@@ -1072,9 +1072,7 @@ weights.
 The number of weights is:
 
 \[
-3 × 3 × 3 × 64
-=
-1728
+3 × 3 × 3 × 64 = 1728
 \]
 
 With bias:
@@ -1083,13 +1081,6 @@ With bias:
 1728+64=1792
 \]
 
-The output spatial size is:
-
-\[
-\frac{224+2(1)-3}{1}+1
-=
-224
-\]
 
 Therefore:
 
