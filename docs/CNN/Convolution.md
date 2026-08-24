@@ -156,25 +156,16 @@ The result is:
 
 \[
 z =
-1w_1 +
-2w_2 +
-3w_3 +
-6w_4 +
-7w_5 +
-8w_6 +
-11w_7 +
-12w_8 +
-13w_9
+1 × w_1 +
+2 × w_2 +
+3 × w_3 +
+6 × w_4 +
+7 × w_5 +
+8 × w_6 +
+11 × w_7 +
+12 × w_8 +
+13 × w_9
 \]
-
-A bias may then be added:
-
-\[
-z =
-\sum_{i,j} x_{ij} w_{ij} + b
-\]
-
-This produces one number.
 
 ---
 
