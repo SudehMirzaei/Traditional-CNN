@@ -452,26 +452,6 @@ A Perceptron can potentially solve this problem.
 
 ---
 
-## 18. Linearly Separable Data
-
-A dataset is linearly separable if there exists a hyperplane that separates the classes.
-
-Mathematically, we need some:
-
-\[
-\mathbf{w},b
-\]
-
-such that the classes can be separated by:
-
-\[
-\mathbf{w}^T\mathbf{x}+b=0
-\]
-
-The Perceptron learning algorithm can converge when the training data is linearly separable.
-
----
-
 ## 19. XOR Problem
 
 A famous limitation of the Perceptron is the XOR problem.
