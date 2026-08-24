@@ -518,18 +518,18 @@ is the weight volume for one filter.
 
 For a convolutional layer:
 
-\[
-\text{Parameters}
+
+{Parameters}
 =
-K_h \times K_w \times C_{in} \times C_{out}
-\]
+K_h × K_w × C_in × C_out
+
 
 where:
 
 - \(K_h\) = Kernel height
 - \(K_w\) = Kernel width
-- \(C_{in}\) = Number of input channels
-- \(C_{out}\) = Number of output channels / filters
+- \(C_in\) = Number of input channels
+- \(C_out\) = Number of output channels / filters
 
 For example:
 
@@ -542,7 +542,7 @@ Output Channels = 64
 The number of weights is:
 
 \[
-3\times3\times3\times64
+3 × 3 × 3 × 64
 \]
 
 \[
