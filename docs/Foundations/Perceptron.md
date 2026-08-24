@@ -127,43 +127,8 @@ The weighted sum is then passed through an activation function.
 
 ---
 
-## 5. Mathematical Representation
 
-For (n) input features:
-
-\[
-z = \sum_{i=1}^{n}w_ix_i+b
-\]
-
-The output is:
-
-\[
-y=f(z)
-\]
-
-Therefore, the complete Perceptron can be written as:
-
-\[
-\boxed{y=f(\mathbf{w}^T\mathbf{x}+b)}
-\]
-
-where:
-
-\[
-\mathbf{x} =
-[x_1,x_2,\dots,x_n]
-\]
-
-and:
-
-\[
-\mathbf{w} =
-[w_1,w_2,\dots,w_n]
-\]
-
----
-
-## 6. Understanding the Inputs
+## 5. Understanding the Inputs
 
 The inputs represent the features given to the Perceptron.
 
@@ -188,7 +153,7 @@ These are the input features.
 
 ---
 
-## 7. Understanding Weights
+## 6. Understanding Weights
 
 Each input has a corresponding weight.
 
