@@ -215,7 +215,7 @@ Example:
 Average:
 
 \[
-\frac{2+4+6+8}{4} = 5
+{2+4+6+8} / {4} = 5
 \]
 
 ---
@@ -225,14 +225,11 @@ Average:
 - Max Pooling: selects maximum value, emphasizing strongest feature.
   
   \[
-  y = \max(x_1, x_2, ..., x_n)
+  y = max(x_1, x_2, ..., x_n)
   \]
 
 - Average Pooling: averages values, smoothing activations.
 
-  \[
-  y = \frac{1}{n} \sum_{i=1}^n x_i
-  \]
 
 ---
 
@@ -260,44 +257,7 @@ Example:
 28 × 28
 ```
 
----
-
-## 12. Pooling with Stride 1
-
-Using 2 × 2 pooling with stride 1 on 4 × 4 input (no padding) produces:
-
-\[
-\text{Output Size} = \left\lfloor \frac{N-K}{S} \right\rfloor + 1 = 3
-\]
-
----
-
-## 13. Pooling Output Size
-
-General formula:
-
-\[
-O = \left\lfloor \frac{N + 2P - K}{S} \right\rfloor + 1
-\]
-
-Where:
-
-- \(N\) = input size
-- \(P\) = padding
-- \(K\) = kernel size
-- \(S\) = stride
-- \(O\) = output size
-
-Example: Input 56, Kernel 2, Stride 2, Padding 0  
-Output:
-
-\[
-O = \left\lfloor \frac{56-2}{2} \right\rfloor +1 = 28
-\]
-
----
-
-## 14. Pooling Does Not Learn Weights
+## 12. Pooling Does Not Learn Weights
 
 Unlike convolution, pooling usually has no learnable parameters.
 
@@ -310,7 +270,7 @@ Hence, pooling is fixed, not learned.
 
 ---
 
-## 15. Pooling and Computational Cost
+## 13. Pooling and Computational Cost
 
 Reducing spatial dimensions reduces computation in subsequent layers.
 
@@ -321,7 +281,7 @@ Example:
 
 ---
 
-## 16. Pooling and Spatial Information
+## 14. Pooling and Spatial Information
 
 Pooling reduces spatial resolution, causing loss in precise location info.
 
@@ -332,7 +292,7 @@ Trade-off:
 
 ---
 
-## 17. Translation Tolerance
+## 15. Translation Tolerance
 
 Pooling provides some robustness to small translations.
 
@@ -340,7 +300,7 @@ Example: same max in different positions produces identical pooled output.
 
 ---
 
-## 18. Pooling and Receptive Fields
+## 16. Pooling and Receptive Fields
 
 Pooling increases effective receptive field of deeper neurons.
 
@@ -348,7 +308,7 @@ Pooling + convolution results in deeper layers integrating larger spatial areas.
 
 ---
 
-## 19. Pooling in Traditional CNNs
+## 17. Pooling in Traditional CNNs
 
 Common architectural pattern:
 
@@ -358,7 +318,7 @@ Input → Convolution → ReLU → Max Pooling → ...
 
 ---
 
-## 20. Pooling in ResNet
+## 18. Pooling in ResNet
 
 ResNet uses a 7×7 stride-2 convolution, followed by 3×3 max pooling stride 2:
 
@@ -372,7 +332,7 @@ Input: 224 × 224 × 3
 
 ---
 
-## 21. Pooling vs Strided Convolution
+## 19. Pooling vs Strided Convolution
 
 - Pooling: fixed downsampling, no learnable weights.
 - Strided convolution: learned downsampling with weights.
@@ -381,14 +341,14 @@ Both reduce spatial resolution.
 
 ---
 
-## 22. Pooling vs Convolution
+## 20. Pooling vs Convolution
 
 - Convolution: feature extraction, learned filters.
 - Pooling: spatial downsampling, summarization.
 
 ---
 
-## 23. Max Pooling Example in a CNN
+## 21. Max Pooling Example in a CNN
 
 Spatial dimension reduction example:
 
@@ -402,7 +362,7 @@ Channels remain unchanged.
 
 ---
 
-## 24. Does Pooling Combine Channels?
+## 22. Does Pooling Combine Channels?
 
 No. Pooling operates independently on each feature map.
 
@@ -410,13 +370,13 @@ Channels remain the same size.
 
 ---
 
-## 25. Pooling and Feature Maps
+## 23. Pooling and Feature Maps
 
 Pooling reduces spatial resolution of feature maps but preserves channel count.
 
 ---
 
-## 26. Global Average Pooling (GAP)
+## 24. Global Average Pooling (GAP)
 
 GAP averages each entire feature map into a single number.
 
@@ -430,19 +390,19 @@ Example:
 
 ---
 
-## 27. Why Global Average Pooling Is Useful
+## 25. Why Global Average Pooling Is Useful
 
 GAP greatly reduces feature size before classification to 2048 values instead of flattening all pixels.
 
 ---
 
-## 28. Pooling and Information Hierarchy
+## 26. Pooling and Information Hierarchy
 
 Pooling aids hierarchical abstraction by progressively reducing resolution and increasing complexity of features.
 
 ---
 
-## 29. Advantages of Pooling
+## 27. Advantages of Pooling
 
 - Spatial downsampling
 - Reduced computation & memory
@@ -452,7 +412,7 @@ Pooling aids hierarchical abstraction by progressively reducing resolution and i
 
 ---
 
-## 30. Limitations of Pooling
+## 28. Limitations of Pooling
 
 - Loss of spatial detail
 - Loss of fine structures
@@ -461,7 +421,7 @@ Pooling aids hierarchical abstraction by progressively reducing resolution and i
 
 ---
 
-## 31. Pooling in Different CNN Architectures
+## 29. Pooling in Different CNN Architectures
 
 Traditional CNNs rely on pooling layers.
 
@@ -469,7 +429,7 @@ Modern CNNs also use strided convolutions and global average pooling.
 
 ---
 
-## 32. Pooling in the ResNet50 Pipeline
+## 30. Pooling in the ResNet50 Pipeline
 
 Flow excerpt:
 
@@ -484,7 +444,7 @@ Flow excerpt:
 
 ---
 
-## 33. Pooling and the Spatial Resolution / Channel Principle
+## 31. Pooling and the Spatial Resolution / Channel Principle
 
 Typical design:
 
@@ -495,7 +455,7 @@ Number of Channels ↑
 
 ---
 
-## 34. Key Conceptual Example
+## 32. Key Conceptual Example
 
 Given 64 feature maps of 56×56, 2×2 max pooling with stride 2 produces 64 feature maps of 28×28.
 
@@ -503,13 +463,13 @@ Channels unchanged, spatial dimension reduced.
 
 ---
 
-## 35. Important Distinction: Pooling Does Not Create New Features
+## 33. Important Distinction: Pooling Does Not Create New Features
 
 Pooling summarizes existing activations; it does not learn new features.
 
 ---
 
-## 36. Summary
+## 34. Summary
 
 Pooling reduces spatial size while retaining important info.
 
@@ -522,7 +482,7 @@ Pooling reduces height and width while preserving channels.
 
 ---
 
-## 37. Key Takeaways
+## 35. Key Takeaways
 
 - Pooling downsamples local spatial regions.
 - Max pooling preserves strongest activation.
