@@ -1210,34 +1210,6 @@ Input
 Output Tensor
 ```
 
-The most important relationships are:
-
-\[
-\boxed{
-\text{One Filter} \rightarrow \text{One Feature Map}
-}
-\]
-
-and:
-
-\[
-\boxed{
-\text{Number of Filters}
-=
-\text{Number of Output Channels}
-}
-\]
-
-and:
-
-\[
-\boxed{
-\text{Parameters}
-=
-K_h \times K_w \times C_{in} \times C_{out}
-}
-\]
-
 Convolution therefore provides the fundamental mechanism through which CNNs transform raw input data into learned visual representations.
 
 ---
