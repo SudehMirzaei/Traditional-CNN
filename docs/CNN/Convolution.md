@@ -947,13 +947,6 @@ The 3 × 3 convolution performs the main spatial feature extraction, while the 1
 
 A fully connected layer connects every input value to every output neuron.
 
-Conceptually:
-
-```
-Input
- ● ● ● ●
- │╲│╲│╲│
- ● ● ● ●
 ```
 
 Convolution instead uses local connectivity and shared weights:
