@@ -951,20 +951,6 @@ A fully connected layer connects every input value to every output neuron.
 
 Convolution instead uses local connectivity and shared weights:
 
-```
-Input Image
-┌────────────────────┐
-│   ┌───┐            │
-│   │ K │            │
-│   └───┘            │
-│       ┌───┐        │
-│       │ K │        │
-│       └───┘        │
-└────────────────────┘
-```
-
-This makes convolution much more suitable for image data.
-
 ---
 
 ## 27. Parameter Efficiency
