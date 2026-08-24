@@ -1045,17 +1045,6 @@ Input
   └── Filter N ──→ Feature Map N
 ```
 
-Therefore:
-
-\[
-{
-\text{Number of Filters}
-=
-\text{Number of Output Channels}
-}
-\]
-
----
 
 ## 29. Complete Example
 
