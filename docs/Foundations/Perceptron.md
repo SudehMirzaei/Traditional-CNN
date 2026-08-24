@@ -321,56 +321,6 @@ x₃ ──→ w₃ ──┤
           Output
 ```
 
-## 13. A Numerical Example
-
-Suppose:
-
-- x₁ = 2
-- x₂ = 4
-
-- w₁ = 0.5
-- w₂ = 1.0
-- b = -3
-
-Calculate:
-
-\[
-z=(0.5)(2)+(1.0)(4)-3
-\]
-
-\[
-z=1+4-3
-\]
-
-\[
-z=2
-\]
-
-Since:
-
-\[
-z\geq0
-\]
-
-the output is:
-
-\[
-y=1
-\]
-
-Therefore:
-
-```
-Input
- ↓
-Weighted Sum = 2
- ↓
-Step Function
- ↓
-Output = 1
-```
-
----
 
 ## 14. Perceptron as a Binary Classifier
 
