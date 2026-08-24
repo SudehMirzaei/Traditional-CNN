@@ -555,28 +555,6 @@ K × K × C_in × C_out
 
 weights.
 
-This leads to the parameter formula:
-
-\[
-\boxed{
-\text{Parameters}
-=
-K_h \times K_w \times C_{in} \times C_{out}
-}
-\]
-
-If biases are used:
-
-\[
-\boxed{
-\text{Parameters}
-=
-K_h \times K_w \times C_{in} \times C_{out}
-+
-C_{out}
-}
-\]
-
 ---
 
 ## 15. Kernel Size
