@@ -747,163 +747,7 @@ This is commonly used in CNN architectures.
 
 ---
 
-## 20. Output Size Formula
-
-The spatial output size of a convolution is calculated using:
-
-\[
-H_{out}
-=
-\left\lfloor
-\frac{H_{in}+2P-K}{S}
-\right\rfloor+1
-\]
-
-\[
-W_{out}
-=
-\left\lfloor
-\frac{W_{in}+2P-K}{S}
-\right\rfloor+1
-\]
-
-where:
-
-- \(H_{in}\) = Input height
-- \(W_{in}\) = Input width
-- \(K\) = Kernel size
-- \(P\) = Padding
-- \(S\) = Stride
-
----
-
-## 21. Example: Convolution Without Padding
-
-Suppose:
-
-```
-Input: 5 × 5
-Kernel: 3 × 3
-Stride: 1
-Padding: 0
-```
-
-Then:
-
-\[
-H_{out}
-=
-\frac{5+0-3}{1}+1
-\]
-
-\[
-=3
-\]
-
-Therefore:
-
-```
-Output: 3 × 3
-```
-
-So:
-
-```
-5 × 5
- ↓
-3×3 Conv
- ↓
-3 × 3
-```
-
----
-
-## 22. Example: Convolution With Padding
-
-Suppose:
-
-```
-Input: 5 × 5
-Kernel: 3 × 3
-Stride: 1
-Padding: 1
-```
-
-Then:
-
-\[
-H_{out}
-=
-\frac{5+2(1)-3}{1}+1
-\]
-
-\[
-=5
-\]
-
-Therefore:
-
-```
-Output: 5 × 5
-```
-
-The spatial size is preserved.
-
----
-
-## 23. Example: Stride 2
-
-Suppose:
-
-```
-Input: 224 × 224
-Kernel: 3 × 3
-Padding: 1
-Stride: 2
-```
-
-Then:
-
-\[
-H_{out}
-=
-\left\lfloor
-\frac{224+2-3}{2}
-\right\rfloor + 1
-\]
-
-\[
-=
-\left\lfloor
-\frac{223}{2}
-\right\rfloor + 1
-\]
-
-\[
-=111 + 1
-\]
-
-\[
-=112
-\]
-
-Therefore:
-
-```
-224 × 224
-      ↓
-3×3 Conv
-Stride = 2
-Padding = 1
-      ↓
-112 × 112
-```
-
-Stride 2 effectively performs spatial downsampling.
-
----
-
-## 24. Convolution Is a Learnable Operation
+## 20. Convolution Is a Learnable Operation
 
 The convolution operation itself uses learnable weights.
 
@@ -937,7 +781,7 @@ During training, the values of \(W\) are updated.
 
 ---
 
-## 25. How Are Convolution Weights Learned?
+## 21. How Are Convolution Weights Learned?
 
 The weights are learned through backpropagation.
 
@@ -969,7 +813,7 @@ Over many iterations, the filter becomes better suited to the task.
 
 ---
 
-## 26. Convolution and Feature Detection
+## 22. Convolution and Feature Detection
 
 A convolutional filter can learn to respond to particular patterns.
 
@@ -991,7 +835,7 @@ However, CNN filters are learned from data rather than manually designed as in t
 
 ---
 
-## 27. Convolution Produces Hierarchical Features
+## 23. Convolution Produces Hierarchical Features
 
 One convolutional layer can detect relatively simple patterns.
 
@@ -1023,7 +867,7 @@ This produces hierarchical representation learning.
 
 ---
 
-## 28. Convolution in Deep CNNs
+## 24. Convolution in Deep CNNs
 
 A deep CNN may contain many convolutional layers.
 
@@ -1057,7 +901,7 @@ These challenges motivated architectures such as ResNet.
 
 ---
 
-## 29. Convolution in ResNet
+## 25. Convolution in ResNet
 
 ResNet is a CNN architecture that relies heavily on convolution.
 
@@ -1099,7 +943,7 @@ The 3 × 3 convolution performs the main spatial feature extraction, while the 1
 
 ---
 
-## 30. Convolution vs Fully Connected Layers
+## 26. Convolution vs Fully Connected Layers
 
 A fully connected layer connects every input value to every output neuron.
 
@@ -1130,7 +974,7 @@ This makes convolution much more suitable for image data.
 
 ---
 
-## 31. Parameter Efficiency
+## 27. Parameter Efficiency
 
 Consider an RGB input:
 
@@ -1148,7 +992,7 @@ and a convolutional layer with:
 The number of weights is:
 
 \[
-3\times3\times3\times64
+3 × 3 × 3 × 64
 =
 1728
 \]
@@ -1165,7 +1009,7 @@ This parameter efficiency is one of the reasons CNNs work well with image data.
 
 ---
 
-## 32. Important Distinction: Kernel vs Output Feature Map
+## 28. Important Distinction: Kernel vs Output Feature Map
 
 These concepts should not be confused.
 
@@ -1207,7 +1051,7 @@ The feature map is the spatial response of that detector.
 
 ---
 
-## 33. One Filter vs Multiple Filters
+## 29. One Filter vs Multiple Filters
 
 For one filter:
 
@@ -1234,7 +1078,7 @@ Input
 Therefore:
 
 \[
-\boxed{
+{
 \text{Number of Filters}
 =
 \text{Number of Output Channels}
@@ -1243,7 +1087,7 @@ Therefore:
 
 ---
 
-## 34. Complete Example
+## 30. Complete Example
 
 Suppose we have:
 
@@ -1271,7 +1115,7 @@ weights.
 The number of weights is:
 
 \[
-3\times3\times3\times64
+3 × 3 × 3 × 64
 =
 1728
 \]
@@ -1312,7 +1156,7 @@ This means:
 
 ---
 
-## 35. Convolution as a Transformation
+## 31. Convolution as a Transformation
 
 A useful way to think about convolution is:
 
@@ -1346,7 +1190,7 @@ High-Level Representations
 
 ---
 
-## 36. Important Parameters of a Convolution
+## 32. Important Parameters of a Convolution
 
 A convolutional layer is mainly characterized by:
 
@@ -1450,7 +1294,7 @@ Convolution therefore provides the fundamental mechanism through which CNNs tran
 
 ---
 
-## 38. Key Takeaways
+## 33. Key Takeaways
 
 - A convolution uses a small set of learnable weights.
 - The kernel examines a local region of the input.
