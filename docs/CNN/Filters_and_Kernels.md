@@ -718,62 +718,7 @@ Padding can allow the output to preserve the spatial dimensions.
 
 ---
 
-## 20. Output Size
-
-The spatial output size of a convolution can be calculated using:
-
-\[
-H_{out}
-=
-\left\lfloor
-\frac{H_{in}+2P-K}{S}
-\right\rfloor+1
-\]
-
-and:
-
-\[
-W_{out}
-=
-\left\lfloor
-\frac{W_{in}+2P-K}{S}
-\right\rfloor+1
-\]
-
-where:
-
-- \(H_{in}\) = Input height
-- \(W_{in}\) = Input width
-- \(K\) = Kernel size
-- \(P\) = Padding
-- \(S\) = Stride
-
-For example:
-
-```
-Input = 224 × 224
-Kernel = 3
-Padding = 1
-Stride = 1
-```
-
-Then:
-
-\[
-\frac{224+2(1)-3}{1}+1
-=
-224
-\]
-
-So the output remains:
-
-```
-224 × 224
-```
-
----
-
-## 21. The Role of Learnable Filters
+## 20. The Role of Learnable Filters
 
 The most important aspect of CNN filters is that they are learnable.
 
@@ -811,7 +756,7 @@ The network discovers useful filters from the data.
 
 ---
 
-## 22. Traditional Filters vs CNN Filters
+## 21. Traditional Filters vs CNN Filters
 
 This distinction is important.
 
@@ -854,7 +799,7 @@ Therefore, CNNs move feature extraction from a manually designed process toward 
 
 ---
 
-## 23. Filters Change Through Training
+## 22. Filters Change Through Training
 
 Consider a filter at initialization:
 
@@ -902,7 +847,7 @@ Improved Filter
 
 ---
 
-## 24. Filters in Different CNN Layers
+## 23. Filters in Different CNN Layers
 
 Filters usually learn increasingly complex representations as we move deeper into the network.
 
@@ -954,7 +899,7 @@ High-Level Representation
 
 ---
 
-## 25. Filters and Representation Learning
+## 24. Filters and Representation Learning
 
 Filters are one of the mechanisms through which CNNs perform Representation Learning.
 
@@ -986,7 +931,7 @@ Therefore, convolutional filters are fundamental components of learned visual re
 
 ---
 
-## 26. A Complete Example
+## 25. A Complete Example
 
 Suppose we have:
 
@@ -1020,7 +965,7 @@ Therefore, the layer contains:
 weights:
 
 \[
-64\times3\times3\times3
+64 × 3 × 3 × 3
 =
 1728
 \]
@@ -1062,7 +1007,7 @@ This means the layer has learned 64 different filters, and each filter generates
 
 ---
 
-## 27. Filters in ResNet
+## 26. Filters in ResNet
 
 The same principles apply to ResNet.
 
@@ -1091,7 +1036,7 @@ weights.
 Since there are 64 filters:
 
 \[
-7\times7\times3\times64
+7 × 7 × 3 × 64
 =
 9408
 \]
@@ -1116,7 +1061,7 @@ This produces 64 learned feature maps.
 
 ---
 
-## 28. Filters Inside a Bottleneck Block
+## 27. Filters Inside a Bottleneck Block
 
 Filters also explain what happens inside a ResNet50 Bottleneck Block.
 
@@ -1172,7 +1117,7 @@ The reason for reducing the channels before the 3 × 3 convolution is to make th
 
 ---
 
-## 29. Kernel Size vs Number of Filters
+## 28. Kernel Size vs Number of Filters
 
 These two concepts should not be confused.
 
@@ -1216,7 +1161,7 @@ For an RGB input, each complete filter actually has depth 3:
 
 ---
 
-## 30. The Most Important Relationship
+## 29. The Most Important Relationship
 
 Remember this relationship:
 
@@ -1250,7 +1195,7 @@ or:
 
 ---
 
-## 31. Summary
+## 30. Summary
 
 A CNN filter is a collection of learnable weights that is applied across an input to detect useful patterns.
 
