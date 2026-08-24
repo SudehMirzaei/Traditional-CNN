@@ -1034,9 +1034,7 @@ weights.
 Since there are 64 filters:
 
 \[
-7 × 7 × 3 × 64
-=
-9408
+7 × 7 × 3 × 64 = 9408
 \]
 
 weights.
