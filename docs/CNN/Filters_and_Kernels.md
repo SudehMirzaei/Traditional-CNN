@@ -252,26 +252,6 @@ Summation
 One Number
 ```
 
-Mathematically:
-
-\[
-z = \sum_{i}\sum_{j}x_{ij}w_{ij}
-\]
-
-where:
-
-- \(x_{ij}\) = input pixel
-- \(w_{ij}\) = kernel weight
-- \(z\) = resulting activation
-
-A bias may also be added:
-
-\[
-z = \sum_i\sum_j x_{ij}w_{ij}+b
-\]
-
----
-
 ## 8. The Kernel Moves Across the Image
 
 The kernel does not remain in one location.
