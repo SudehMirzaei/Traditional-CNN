@@ -965,9 +965,7 @@ Therefore, the layer contains:
 weights:
 
 \[
-64 × 3 × 3 × 3
-=
-1728
+64 × 3 × 3 × 3 = 1728
 \]
 
 If bias is included:
