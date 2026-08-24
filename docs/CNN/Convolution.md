@@ -962,15 +962,13 @@ and a convolutional layer with:
 The number of weights is:
 
 \[
-3 × 3 × 3 × 64
-=
-1728
+3 × 3 × 3 × 64 = 1728
 \]
 
 With biases:
 
 \[
-1728+64=1792
+1728 + 64 = 1792
 \]
 
 This is dramatically smaller than connecting all 150,528 input values directly to many neurons.
