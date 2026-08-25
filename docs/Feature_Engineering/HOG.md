@@ -440,20 +440,6 @@ A common HOG configuration uses:
 
 9 orientation bins
 
-for orientations from:
-
-\[
-0^\circ \text{ to } 180^\circ
-\]
-
-This means the orientation range is divided into approximately:
-
-\[
-20^\circ
-\]
-
-per bin.
-
 For example:
 
 - Bin 1 → 0°–20°
@@ -470,31 +456,6 @@ The exact configuration can vary depending on the implementation.
 
 HOG commonly uses unsigned gradient orientations.
 
-That means:
-
-\[
-0^\circ
-\]
-
-and:
-
-\[
-180^\circ
-\]
-
-are treated as equivalent.
-
-Therefore, the orientation range is:
-
-\[
-0^\circ \rightarrow 180^\circ
-\]
-
-rather than:
-
-\[
-0^\circ \rightarrow 360^\circ
-\]
 
 This is useful because an edge often has the same structural meaning regardless of which direction its intensity changes.
 
