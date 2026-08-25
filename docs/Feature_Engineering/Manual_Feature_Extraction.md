@@ -61,13 +61,13 @@ These features provide a more informative representation than simply using raw p
 Consider an RGB image with a resolution of:
 
 \[
-224 \times 224
+224 × 224
 \]
 
 It contains:
 
 \[
-224 \times 224 \times 3 = 150,528
+224 × 224 × 3 = 150,528
 \]
 
 pixel values.
