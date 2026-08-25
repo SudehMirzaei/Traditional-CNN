@@ -172,7 +172,7 @@ For example:
 Once \( G_x \) and \( G_y \) are known, the gradient magnitude can be calculated as:
 
 \[
-G=\sqrt{G_x^2+G_y^2}
+G=sqrt{G_x^2+G_y^2}
 \]
 
 The magnitude tells us:
@@ -191,18 +191,6 @@ Therefore, a large gradient magnitude indicates a strong local change in image i
 ## 8. Gradient Orientation
 
 The gradient also has a direction.
-
-The orientation can be calculated using:
-
-\[
-\theta=\arctan\left(\frac{G_y}{G_x}\right)
-\]
-
-More commonly, implementations use:
-
-\[
-\theta=\operatorname{atan2}(G_y,G_x)
-\]
 
 The orientation tells us:
 
