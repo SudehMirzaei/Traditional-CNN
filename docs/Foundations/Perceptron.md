@@ -635,10 +635,6 @@ Training continues over the dataset.
 
 The learning rate controls how large each weight update is.
 
-It is represented by:
-
-\(\eta\)
-
 For example:
 
 - η = 0.1
