@@ -506,21 +506,11 @@ Block normalization reduces this sensitivity.
 
 Suppose a block contains a vector of histogram values:
 
-\[
-v=[v_1,v_2,\dots,v_n]
-\]
 
-The vector can be normalized using an (L_2)-based normalization such as:
+v=[v_1,v_2,...,v_n]
 
-\[
-v'=\frac{v}{\sqrt{\|v\|_2^2+\epsilon^2}}
-\]
 
-where:
-
-- \( v \) = original block histogram vector
-- \( v' \) = normalized vector
-- \( \epsilon \) = small constant for numerical stability
+The vector can be normalized using an (L_2)-based normalization 
 
 The exact normalization method can vary.
 
