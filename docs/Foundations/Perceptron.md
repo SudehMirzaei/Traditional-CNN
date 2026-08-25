@@ -181,7 +181,7 @@ The first feature has a stronger influence on the weighted sum.
 
 ---
 
-## 8. What Does a Weight Mean?
+## 7. What Does a Weight Mean?
 
 A weight can be interpreted as the importance and direction of an input feature.
 
@@ -217,7 +217,7 @@ This suggests that:
 
 ---
 
-## 9. The Bias
+## 8. The Bias
 
 The Perceptron also contains a bias.
 
@@ -241,7 +241,7 @@ This gives the model greater flexibility.
 
 ---
 
-## 10. Weighted Sum
+## 9. Weighted Sum
 
 The first computational step is calculating the weighted sum.
 
@@ -276,7 +276,7 @@ This value is passed to the activation function.
 
 ---
 
-## 11. Step Function
+## 10. Step Function
 
 The original Perceptron commonly uses a step activation function.
 
@@ -303,7 +303,7 @@ while:
 
 ---
 
-## 12. Complete Perceptron Computation
+## 11. Complete Perceptron Computation
 
 The complete process is:
 
@@ -322,7 +322,7 @@ x₃ ──→ w₃ ──┤
 ```
 
 
-## 14. Perceptron as a Binary Classifier
+## 12. Perceptron as a Binary Classifier
 
 The Perceptron is fundamentally a binary classifier.
 
@@ -353,7 +353,7 @@ Positive / Negative
 
 ---
 
-## 15. Decision Boundary
+## 13. Decision Boundary
 
 One of the most important concepts associated with the Perceptron is the decision boundary.
 
@@ -396,7 +396,7 @@ and points on the other side as:
 
 ---
 
-## 16. Linear Decision Boundary
+## 14. Linear Decision Boundary
 
 The Perceptron can only learn a linear decision boundary.
 
@@ -422,7 +422,7 @@ Therefore:
 
 ---
 
-## 17. What Does "Linear" Mean?
+## 15. What Does "Linear" Mean?
 
 Suppose the data looks like this:
 
@@ -452,7 +452,7 @@ A Perceptron can potentially solve this problem.
 
 ---
 
-## 19. XOR Problem
+## 16. XOR Problem
 
 A famous limitation of the Perceptron is the XOR problem.
 
@@ -488,7 +488,7 @@ Therefore:
 
 ---
 
-## 20. Why XOR Is Important
+## 17. Why XOR Is Important
 
 The XOR problem demonstrated an important limitation of a single linear neuron.
 
@@ -504,7 +504,7 @@ This limitation motivated the development of multi-layer neural networks.
 
 ---
 
-## 21. From Perceptron to Neural Networks
+## 18. From Perceptron to Neural Networks
 
 A single Perceptron looks like:
 
@@ -546,7 +546,7 @@ Multiple layers allow the network to learn more complex functions.
 
 ---
 
-## 22. Perceptron vs Multi-Layer Neural Network
+## 19. Perceptron vs Multi-Layer Neural Network
 
 ### Single Perceptron
 
@@ -582,7 +582,7 @@ The addition of hidden layers enables neural networks to model nonlinear relatio
 
 ---
 
-## 23. Perceptron Learning
+## 20. Perceptron Learning
 
 The Perceptron does not simply use fixed weights.
 
@@ -599,7 +599,7 @@ The goal is to gradually find weights that correctly classify the training examp
 ---
 
 
-## 28. Perceptron Training Loop
+## 21. Perceptron Training Loop
 
 The training process can be represented as:
 
@@ -631,7 +631,7 @@ Training continues over the dataset.
 
 ---
 
-## 29. Learning Rate
+## 22. Learning Rate
 
 The learning rate controls how large each weight update is.
 
@@ -650,7 +650,7 @@ Conceptually:
 
 ---
 
-## 30. Perceptron and Loss
+## 23. Perceptron and Loss
 
 The original Perceptron learning algorithm is based on correcting misclassified samples rather than using the modern gradient-based loss optimization typically used in deep neural networks.
 
@@ -668,7 +668,7 @@ The classical Perceptron uses its update rule to correct classification mistakes
 
 ---
 
-## 31. Perceptron vs Modern Neuron
+## 24. Perceptron vs Modern Neuron
 
 The Perceptron and a modern neural network neuron share an important structure:
 
@@ -695,7 +695,7 @@ while the classical Perceptron uses a hard threshold/step function.
 
 ---
 
-## 32. Why the Step Function Is a Problem for Deep Learning
+## 25. Why the Step Function Is a Problem for Deep Learning
 
 The step function is discontinuous.
 
@@ -708,7 +708,7 @@ Therefore, modern neural networks use differentiable or piecewise-differentiable
 
 ---
 
-## 33. Perceptron and Backpropagation
+## 26. Perceptron and Backpropagation
 
 A single Perceptron does not represent the full modern backpropagation framework used by deep neural networks.
 
@@ -731,7 +731,7 @@ Understanding it helps explain why neural networks have:
 
 ---
 
-## 34. Perceptron as the Foundation of Neural Networks
+## 27. Perceptron as the Foundation of Neural Networks
 
 The Perceptron introduced many ideas that remain central to neural networks:
 
@@ -762,7 +762,7 @@ The major difference is that modern architectures contain:
 
 ---
 
-## 35. Perceptron → MLP → Deep Neural Network
+## 28. Perceptron → MLP → Deep Neural Network
 
 A useful conceptual progression is:
 
@@ -782,7 +782,7 @@ Each stage builds on the fundamental idea of transforming inputs through learnab
 
 ---
 
-## 36. Perceptron and Feature Engineering
+## 29. Perceptron and Feature Engineering
 
 The Perceptron itself does not perform sophisticated feature extraction.
 
@@ -813,7 +813,7 @@ This is fundamentally different from a CNN, which can learn its feature represen
 
 ---
 
-## 37. Perceptron vs CNN
+## 30. Perceptron vs CNN
 
 ### Perceptron
 
@@ -853,7 +853,7 @@ The CNN contains many layers that learn hierarchical visual representations.
 
 ---
 
-## 38. Perceptron in the Context of This Repository
+## 31. Perceptron in the Context of This Repository
 
 The Perceptron is useful as a foundational concept before studying:
 
@@ -883,7 +883,7 @@ Understanding the Perceptron makes it easier to understand what happens inside t
 
 ---
 
-## 39. Key Concepts
+## 32. Key Concepts
 
 The most important concepts associated with the Perceptron are:
 
@@ -897,7 +897,7 @@ The most important concepts associated with the Perceptron are:
 
 ---
 
-## 40. Advantages
+## 33. Advantages
 
 The Perceptron has several important advantages:
 
@@ -910,7 +910,7 @@ The Perceptron has several important advantages:
 
 ---
 
-## 41. Limitations
+## 34. Limitations
 
 The classical Perceptron also has important limitations:
 
@@ -923,21 +923,9 @@ The classical Perceptron also has important limitations:
 
 ---
 
-## 42. Summary
+## 35. Summary
 
 The Perceptron is a simple computational model that combines input features using learnable weights and a bias.
-
-The basic computation is:
-
-\[
-z=\mathbf{w}^T\mathbf{x}+b
-\]
-
-followed by an activation:
-
-\[
-y=f(z)
-\]
 
 The classical Perceptron uses a threshold function to produce a binary prediction.
 
