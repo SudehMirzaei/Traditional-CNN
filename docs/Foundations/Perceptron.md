@@ -699,15 +699,6 @@ while the classical Perceptron uses a hard threshold/step function.
 
 The step function is discontinuous.
 
-For example:
-
-\[
-f(z)=
-\begin{cases}
-0 & z<0\\
-1 & z\geq0
-\end{cases}
-\]
 
 Its derivative is not useful for standard gradient-based learning.
 
