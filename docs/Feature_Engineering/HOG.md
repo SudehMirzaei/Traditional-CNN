@@ -254,28 +254,17 @@ G_y=4
 The magnitude is:
 
 \[
-G=\sqrt{3^2+4^2}
+G=sqrt{3^2+4^2}
 \]
 
 \[
-G=\sqrt{9+16}
+G=sqrt{9+16}
 \]
 
 \[
 G=5
 \]
 
-The orientation is approximately:
-
-\[
-\theta=\operatorname{atan2}(4,3)
-\]
-
-which is approximately:
-
-\[
-53.1^\circ
-\]
 
 Therefore, this pixel has:
 
