@@ -294,33 +294,6 @@ These images form a scale space.
 
 ---
 
-## 9. Gaussian Blur
-
-SIFT uses Gaussian smoothing.
-
-The Gaussian function is:
-
-\[
-G(x,y,\sigma)
-=
-\frac{1}{2\pi\sigma^2}
-e^{-\frac{x^2+y^2}{2\sigma^2}}
-\]
-
-where:
-
-- (x,y) = spatial coordinates
-- (\sigma) = scale parameter
-
-Larger (\sigma) means stronger smoothing.
-
-Conceptually:
-
-- Small σ ↓ Less Blur
-- Large σ ↓ More Blur
-
----
-
 ## 10. Why Blur the Image?
 
 Blurring allows SIFT to analyze structures at different spatial scales.
