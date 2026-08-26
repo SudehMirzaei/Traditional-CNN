@@ -317,29 +317,6 @@ SIFT uses an efficient approximation to scale-space extrema detection called:
 
 > Difference of Gaussians (DoG)
 
-Two Gaussian-blurred versions of the image are subtracted:
-
-\[
-DoG(x,y,\sigma)
-=
-L(x,y,k\sigma)-L(x,y,\sigma)
-\]
-
-where:
-
-\[
-L(x,y,\sigma)
-=
-G(x,y,\sigma)*I(x,y)
-\]
-
-Here:
-
-- \( I(x,y) \) = original image
-- \( G \) = Gaussian function
-- \( * \) = convolution
-- \( L \) = Gaussian-blurred image
-
 ---
 
 ## 12. Why Difference of Gaussians?
