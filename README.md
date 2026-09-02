@@ -1,155 +1,78 @@
-# Traditional CNN
+# Traditional-CNN
 
-A structured documentation repository covering the fundamentals of Neural Networks, Deep Learning, Convolutional Neural Networks (CNNs), Training, and Traditional Feature Engineering techniques.
+A comprehensive documentation repository covering the fundamentals of Convolutional Neural Networks (CNNs), feature engineering techniques, neural network foundations, and training methodologies.
 
-The purpose of this repository is to build a clear conceptual understanding of how image-based machine learning systems work, from basic neural networks to CNNs and classical handcrafted feature extraction methods.
+## 📚 Documentation
 
----
+### 🧠 CNN (Convolutional Neural Networks)
+Core concepts and components of CNN architectures:
 
-📚 Documentation
+- [CNN Introduction](docs/CNN/CNN_Introduction.md) - Overview of CNNs and their applications
+- [Convolution](docs/CNN/Convolution.md) - The convolution operation explained
+- [Filters and Kernels](docs/CNN/Filters_and_Kernels.md) - Understanding filters and kernels in CNNs
+- [Feature Maps](docs/CNN/Feature_Maps.md) - How feature maps are generated and visualized
+- [Activation Functions](docs/CNN/Activation_Functions.md) - Common activation functions used in CNNs
+- [Pooling](docs/CNN/Pooling.md) - Pooling layers and their importance
+- [Fully Connected Layer](docs/CNN/Fully_Connected_Layer.md) - The role of fully connected layers
 
-The documentation is organized into four main sections.
+### 🔍 Feature Engineering
+Traditional and modern feature extraction techniques:
 
----
+- [Manual Feature Extraction](docs/Feature_Engineering/Manual_Feeature_Extraction.md) - Introduction to manual feature engineering
+- [HOG (Histogram of Oriented Gradients)](docs/Feature_Engineering/HOG.md) - HOG feature descriptor
+- [SIFT (Scale-Invariant Feature Transform)](docs/Feature_Engineering/SIFT.md) - SIFT algorithm for feature detection
+- [Texture Features](docs/Feature_Engineering/Texture_Features.md) - Texture-based feature extraction methods
 
-🧠 Foundations
+### 🏗️ Foundations
+Neural network fundamentals and building blocks:
 
-This section covers the fundamental concepts required to understand neural networks and deep learning.
+- [Perceptron](docs/Foundations/Perceptron.md) - The basic unit of neural networks
+- [Neural Networks](docs/Foundations/Neural_Networks.md) - Introduction to neural network architectures
+- [Deep Neural Networks](docs/Foundations/Deep_Neural_Networks.md) - Understanding deep learning architectures
 
-- **Perceptron** (docs/Foundation/Perceptron.md)  
-  The Perceptron is one of the simplest mathematical models of a neuron and provides the foundation for understanding artificial neural networks.
+### 🎯 Training
+Training processes and optimization techniques:
 
-- **Neural Networks** (docs/Foundation/Neural_Networks.md)  
-  Introduces the basic concepts of artificial neural networks, including neurons, weights, biases, layers, and network structure.
+- [Forward Propagation](docs/Training/Forward_Propagation.md) - How data flows through neural networks
+- [BackPropagation](docs/Training/BackPropagation.md) - The learning algorithm for neural networks
+- [Loss Function](docs/Training/Loss_Function.md) - Measuring model performance
+- [Gradient Descent](docs/Training/Gradient_Descent.md) - Optimization algorithm for training
 
-- **Deep Neural Networks** (docs/Foundation/Deep_Neural_Networks.md)  
-  Explains how neural networks become deeper architectures and how multiple layers allow models to learn increasingly complex representations.
+## 🚀 Getting Started
 
----
+To explore this documentation:
 
-🏋️ Training
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Traditional-CNN.git
+   ```
 
-This section explains how neural networks learn from data and optimize their parameters.
+2. Navigate to the docs folder:
+   ```bash
+   cd Traditional-CNN/docs
+   ```
 
-- **Forward Propagation** (docs/Training/Forward_Propagation.md)  
-  Explains how input data moves through the network from the input layer to the output layer to produce predictions.
+3. Start with the fundamentals in the Foundations folder, then move to CNN concepts, followed by Feature Engineering techniques, and finally Training methodologies.
 
-- **Loss Function** (docs/Training/Loss_Function.md)  
-  Explains how the difference between the model's prediction and the target value is measured using a loss function.
+### 📖 Recommended Learning Path
 
-- **Backpropagation** (docs/Training/BackPropagation.md)  
-  Explains how the error is propagated backward through the network to calculate gradients for the model parameters.
+1. **Foundations**: Begin with Perceptron → Neural Networks → Deep Neural Networks
+2. **CNN Core**: Understand CNN Introduction → Convolution → Filters → Feature Maps → Pooling → Fully Connected Layers
+3. **Feature Engineering**: Compare traditional methods (HOG, SIFT, Texture) with CNN-based approaches
+4. **Training**: Learn about Forward Propagation → Loss Functions → BackPropagation → Gradient Descent
 
-- **Gradient Descent** (docs/Training/Gradient_Descent.md)  
-  Explains how gradients are used to update model parameters and minimize the loss during training.
+## 🤝 Contributing
 
----
+Contributions to improve documentation are welcome! Please feel free to submit pull requests or open issues for any corrections or additions.
 
-🖼️ Convolutional Neural Networks
+## 📄 License
 
-This section covers the fundamental components and operations of Convolutional Neural Networks.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- **CNN Introduction** (docs/CNN/CNN_Introduction.md)  
-  Introduces Convolutional Neural Networks and explains why they are particularly useful for image processing and computer vision.
+## 📞 Contact
 
-- **Filters and Kernels** (docs/CNN/Filters_and_Kernels.md)  
-  Explains the concept of filters and kernels and how they are used to detect visual patterns in images.
+For questions or suggestions, please open an issue in the repository.
 
-- **Convolution** (docs/CNN/Convolution.md)  
-  Explains the convolution operation and how a kernel moves across an image to generate new representations.
-
-- **Feature Maps** (docs/CNN/Feature_Maps.md)  
-  Explains how convolution produces feature maps and how these maps represent visual patterns detected by CNN filters.
-
-- **Activation Functions** (docs/CNN/Activation_Functions.md)  
-  Explains activation functions and their role in introducing non-linearity into neural networks.
-
-- **Pooling** (docs/CNN/Pooling.md)  
-  Explains pooling operations such as Max Pooling and Average Pooling and how they reduce the spatial dimensions of feature maps.
-
-- **Fully Connected Layer** (docs/CNN/Fully_Connected_Layer.md)  
-  Explains the role of fully connected layers in CNNs and how extracted features are transformed into final predictions.
-
----
-
-🔍 Feature Engineering
-
-This section focuses on classical image feature extraction techniques that were widely used before deep learning-based feature learning became dominant.
-
-- **Manual Feature Extraction** (docs/Feature_Engineering/Manual_Feeature_Extraction.md)  
-  Introduces the concept of manually designing and extracting meaningful features from images.
-
-- **HOG — Histogram of Oriented Gradients** (docs/Feature_Engineering/HOG.md)  
-  Explains HOG, a classical feature descriptor that represents objects using the distribution of local gradient orientations.
-
-- **SIFT — Scale-Invariant Feature Transform** (docs/Feature_Engineering/SIFT.md)  
-  Explains SIFT and how it detects and describes distinctive local image features while providing robustness to scale and rotation changes.
-
-- **Texture Features** (docs/Feature_Engineering/Texture_Features.md)  
-  Introduces techniques for representing image texture and extracting information from local intensity patterns and spatial relationships.
-
----
-
-🗂️ Repository Structure
-
-```
-Traditional-CNN/
-│
-├── README.md
-│
-└── docs/
-    │
-    ├── CNN/
-    │   ├── Activation_Functions.md
-    │   ├── CNN_Introduction.md
-    │   ├── Convolution.md
-    │   ├── Feature_Maps.md
-    │   ├── Filters_and_Kernels.md
-    │   ├── Fully_Connected_Layer.md
-    │   └── Pooling.md
-    │
-    ├── Feature_Engineering/
-    │   ├── HOG.md
-    │   ├── Manual_Feeature_Extraction.md
-    │   ├── SIFT.md
-    │   └── Texture_Features.md
-    │
-    ├── Foundation/
-    │   ├── Deep_Neural_Networks.md
-    │   ├── Neural_Networks.md
-    │   └── Perceptron.md
-    │
-    └── Training/
-        ├── BackPropagation.md
-        ├── Forward_Propagation.md
-        ├── Gradient_Descent.md
-        └── Loss_Function.md
-```
-
----
-
-🗺️ Suggested Learning Path
-
-A recommended order for studying the documentation is:
-
-1. [Perceptron](docs/Foundation/Perceptron.md)
-2. [Neural Networks](docs/Foundation/Neural_Networks.md)
-3. [Deep Neural Networks](docs/Foundation/Deep_Neural_Networks.md)
-4. [Forward Propagation](docs/Training/Forward_Propagation.md)
-5. [Loss Function](docs/Training/Loss_Function.md)
-6. [Backpropagation](docs/Training/BackPropagation.md)
-7. [Gradient Descent](docs/Training/Gradient_Descent.md)
-8. [CNN Introduction](docs/CNN/CNN_Introduction.md)
-9. [Filters and Kernels](docs/CNN/Filters_and_Kernels.md)
-10. [Convolution](docs/CNN/Convolution.md)
-11. [Feature Maps](docs/CNN/Feature_Maps.md)
-12. [Activation Functions](docs/CNN/Activation_Functions.md)
-13. [Pooling](docs/CNN/Pooling.md)
-14. [Fully Connected Layer](docs/CNN/Fully_Connected_Layer.md)
-15. [Manual Feature Extraction](docs/Feature_Engineering/Manual_Feeature_Extraction.md)
-16. [HOG](docs/Feature_Engineering/HOG.md)
-17. [SIFT](docs/Feature_Engineering/SIFT.md)
-18. [Texture Features](docs/Feature_Engineering/Texture_Features.md)
 
 ---
 
@@ -166,37 +89,3 @@ The main goals of this repository are to:
 - Learn classical handcrafted feature extraction methods.
 - Build a bridge between traditional computer vision and deep learning.
 
----
-
-📖 Topics Covered
-
-**Foundations**
-
-- Perceptron
-- Neural Networks
-- Deep Neural Networks
-
-**Training**
-
-- Forward Propagation
-- Loss Functions
-- Backpropagation
-- Gradient Descent
-
-**CNN**
-
-- CNN Introduction
-- Filters and Kernels
-- Convolution
-- Feature Maps
-- Activation Functions
-- Pooling
-- Fully Connected Layers
-
-**Feature Engineering**
-
-- Manual Feature Extraction
-- HOG
-- SIFT
-- Texture Features
-```
